@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="title"> Tema15: Trabajando con Firebase</h1>
+
+  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of itemList;let id= index" cdkDrag>
+      <app-item [item]="item" (complete)="completeItem($event, id)"></app-item>
+    </div>
+  </div>
+</div>
