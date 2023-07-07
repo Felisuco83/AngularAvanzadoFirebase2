@@ -1,4 +1,7 @@
 <div class="item" [ngClass]="item.completed?'completed': ''">
+
+    <img [src]="item['img']" width="32" style="margin-right: 4px; border-radius: 50%" alt="👨‍🎓" />
+
     <div>{{item.text}}</div>
-    <button (click)="completeItem()">Complete</button>
+    <button (click)="completeItem()">Completar</button>
 </div>
